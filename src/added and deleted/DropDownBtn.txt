@@ -1,0 +1,52 @@
+constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
+  }
+  // till here...
+
+
+render() {
+    return (
+      <div className="headerStyle">
+
+        <div className="header-topbar">
+          <img className="app-logo" src={require('../images/logo.png')} alt="logo" />
+          <div className="app-name">The Programming Club App</div>
+          <div className="profile">
+            <img className="dp" src={require('../images/avatar-01.jpg')} alt="logo" />
+            <div className="username">Parva</div>
+          </div>
+          {/*  <DropdownButton className="dropdownbtn" title="Dropdown button">
+            <Dropdown.Item className="dropitems" href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item className="dropitems" href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item className="dropitems" href="#/action-3">Something else</Dropdown.Item>
+          </DropdownButton>
+        */}
+
+          <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+            <DropdownToggle caret>
+              Dropdown
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem>Some Action</DropdownItem>
+              <DropdownItem disabled>Action (disabled)</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Foo Action</DropdownItem>
+              <DropdownItem>Bar Action</DropdownItem>
+              <DropdownItem>Quo Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+
+        </div>
+

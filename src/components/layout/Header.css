@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.headerStyle {
+    text-align: left;
+    background: rgb(165, 59, 59);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header-topbar {
+    position: relative;
+    background-color: rgba(20,70,73, 1);
+    width: 100%;
+    min-height: 87px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    z-index: 200;
+}
+
+.app-logo {
+    width: 116px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.app-name {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 255, 162, 1);
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 12px;
+    padding-top: 26px;
+}
+
+.profile {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    min-width: 315px;
+    padding-top: 15px;
+}
+
+.dp {
+    width: 60px;
+    border-radius: 30px;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+.dp:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.username {
+    position: absolute;
+    color: rgba(0, 255, 162, 1);
+    display: inline-block;
+    font-size: 25px;
+    min-width: 180px;
+    padding-left: 10px;
+    line-height: 76px;
+    top: 10px;
+    user-select: none;
+}
+.username:hover {
+    color: rgb(168, 255, 223);
+}
+
+.arrow-down {
+    position: absolute;
+    color: rgba(0, 255, 162, 1);
+    display: inline-block;
+    font-size: 50px;
+    transform: rotate(180deg);
+    right: 20px;
+    top: -45px;
+    margin-top: 50px;
+    user-select: none;
+}
+.arrow-down:hover {
+    color: rgb(168, 255, 223);
+}
+
+
+.menu {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    width: 350px;
+    height: 326px;
+    right: 80px;
+    border-radius: 60px 0px 20px 20px;
+}
+
+.dropitems-view-only {
+    height: 120px;
+}
+
+.dp-big {
+    position: absolute;
+    width: 80px;
+    left: 20px;
+    top: 20px;
+    border-radius: 40px;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+.name-email {
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 35px;
+}
+.username-big {
+    position: absolute;
+    color: rgba(0, 255, 162, 1);
+    display: inline-block;
+    font-size: 25px;
+    width: 180px;
+    padding-left: 90px;
+    padding-top: -30px;
+}
+.email-big {
+    position: absolute;
+    font-size: 15px;
+    vertical-align: middle;   
+    padding-left: 92px;
+    padding-top: 50px;
+}
+.line {
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    background-color: rgba(0, 255, 162, 1);
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 1px;
+}
+
+.dropitems {
+    position: relative;
+    width: 100%;
+    height: 93px;
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.2);
+    color: rgba(0, 255, 162, 1);
+    font-size: 30px;
+    line-height: 93px;  
+    border-radius:  0 0 20px 20px;
+    user-select: none;
+}
+.dropitems:hover {
+    color: white;
+    border-radius:  0 0 20px 20px;
+    background-color: rgb(17, 107, 95);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    user-select: none;
+}
+
+.dropitems_link {
+    appearance: button;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0,0.2);
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    height: 93px;
+    text-align: center;
+    color: rgba(0, 255, 162, 1);
+    font-size: 30px;
+    line-height: 93px;  
+    user-select: none;
+}
+.dropitems_link:hover {
+    color: white;
+    background-color: rgb(17, 107, 95);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    user-select: none;
+}
+
+
+.Navbar {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(17, 107, 95); 
+}
+
+.tabs {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    z-index: 1;
+}
+
+.timepass {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+}
+
+.linkStyle {
+    position: relative;
+    color: rgba(0, 255, 162, 1);
+    background-color: rgb(17, 107, 95);
+    font-size: 180%;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-items: center;
+    min-height: 60px;
+    width: 25%;
+    text-align: center;
+    line-height: 60px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+.linkStyle:hover {
+    
+    background-color: rgb(24, 138, 123);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    width: 27%;
+}
+
+
+

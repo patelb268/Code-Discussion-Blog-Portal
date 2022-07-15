@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400i|Petit+Formal+Script');
+
+/*
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Cantarell', sans-serif;
+
+*/
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.main_page {
+  /*background-image: url(../images/blue.jpg);
+  background-attachment: fixed;*/
+  /*background-color: rgb(98, 255, 200);*/
+  background-color: rgb(220, 255, 252);
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 920px;
+}
+
+.team {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(20,70,73, 1);
+  padding-top: 20px;
+}
+
+.photo {
+  position: relative;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.line {
+  position: relative;
+  margin: 10px 0 10px 10%;
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgb(0, 212, 135);
+}
+
+.name_team {
+  font-size: 30px;
+  color: rgb(0, 212, 135);
+}
+
+.name {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(20,70,73, 1);
+  padding-top: 20px;
+}
+
+.work_team {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.contain_all {
+  padding: 40px 0 0 255px;
+}
+
+
+.member_1, .member_2, .member_3, .member_4, .member_5, .member_6, .member_7, .member_8 {
+  position: absolute;
+  width: 300px;
+  background: rgba(20,70,73, 1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.member_1 {
+  margin: 20px 0 0 30px;
+}
+.member_2 {
+  margin: 20px 0 0 380px;
+}
+.member_3 {
+  margin: 20px 0 0 730px;
+}
+.member_4 {
+  margin: 20px 0 0 1080px;
+}
+.member_5 {
+  margin: 380px 0 0 30px;
+}
+.member_6 {
+  margin: 380px 0 0 380px;
+}
+.member_7 {
+  margin: 380px 0 0 730px;
+}
+.member_8 {
+  margin: 380px 0 0 1080px;
+}
+

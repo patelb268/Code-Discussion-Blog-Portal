@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400i|Petit+Formal+Script');
+
+/*
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Cantarell', sans-serif;
+
+*/
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+
+.calendar-bg {
+  background-color: rgb(220, 255, 252);
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 1000px;
+
+}
+
+.CalendarStyle {
+  text-align: center;
+  width: 80%;
+  margin: 0 0 0 10%;
+}
+
+.name {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(20,70,73, 1);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-new-event {
+  position: relative;
+  width: 35%;
+  margin: 20px 0 20px 32.5%;
+  height: 400px;
+  background-color: rgba(20,70,73, 1);
+  border-radius: 20px;
+}
+.head-event-form {
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+  font-weight: 600;
+  color: white;
+}
+
+.text-form {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+
+
+
+.Add-Blog-button {
+  position: fixed;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgb(17, 107, 95);
+  text-decoration: none;
+  color: rgba(0, 255, 162, 1);
+  line-height: 80px;
+  font-size: 70px;
+  right: 20px;
+  top: 170px;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+.Add-Blog-button:hover {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  color: white;
+  line-height: 90px;
+  font-size: 75px;
+  right: 15px;
+  top: 165px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  animation: animate1 0.5s linear;
+}
+@keyframes animate1
+{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
+
+
+/* Blog.js */
+
+.blog-box {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.message {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  border-radius: 30px;
+  min-height: 300px;
+  margin-left: 20%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  user-select: none;
+}
+
+.blog_title {
+  position: relative;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 40px;
+  padding-bottom: 2px;
+  font-size: 40px;
+  color: rgba(20,70,73, 1);
+}
+
+.headerh3 {
+  position: relative;
+  text-align: left;
+  padding-left: 5.5%;
+  font-size: 20px;
+  color: rgba(20,70,73, 1);
+}
+
+.blog_author {
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  color: rgba(20,70,73, 1);
+}
+
+.blog_date {
+  position: absolute;
+  right: 5%;
+  top: 70px;
+  font-size: 20px;
+  color: rgba(20,70,73, 1);
+  font-family: 'Cantarell', sans-serif;
+  font-style: italic;  
+}
+
+.partition-line {
+  position: absolute;
+  height: 4px;
+  width: 90%;
+  background-color: rgba(20,70,73, 1);
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+}
+
+.blog_content {
+  position: relative;
+  font-size: 20px;
+  color: rgba(20,70,73, 1);
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.tag-bar {
+  text-align: center;
+}
+
+.tags-name {
+  display: inline-block;
+}
+.tags {
+  display: inline-block;
+  min-width: 30px;
+  height: 25px;
+  line-height: 25px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border-radius: 5px;;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
+
+.voting {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.upvote-box {
+  text-align: center;
+  margin-right: 5px;
+} 
+.downvote-box {
+  text-align: center;
+  margin-left: 5px;
+}
+
+.upvote, .downvote {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.upvote:hover, .downvote:hover {
+  animation: animate2 0.1s 2 linear;
+}
+@keyframes animate2
+{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
+.count {
+  font-size: 20px;
+}
+
+.partition-line-2 {
+  position: absolute;
+  height: 4px;
+  width: 50%;
+  background-color: rgba(20,70,73, 1);
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+}
+
+.comments-section {
+  margin-left: 10%;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: relative;
+  width: 80%;
+  min-height: 140px;
+  background-color: rgba(20,70,73, 1);
+}
+.comments-name {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.partition-line-3 {
+  position: absolute;
+  height: 2px;
+  width: 20%;
+  background-color: white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 1px;
+}
+
+.no-comments {
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  background-color: rgba(0,186,136,1);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  transition-property: all;
+  transition-duration: 0.05s;
+  transition-timing-function: linear;
+}
+.comment-btn:hover {
+  width: 210px;
+  height: 52.5px;
+  margin-top: 8.75px;
+  font-size: 22.5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.comment-main-2 {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 5%;
+  color: white;
+  /*background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;  */
+}
+
+.comment-particular {
+  width: 100%;
+  min-height: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  user-select: none;
+}
+
+.comment-content {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  padding: 12px 0 10px 0;
+  font-style: italic;
+  max-width: 80%;
+  text-align: justify;
+}
+
+.comment-username {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.partition-line-4 {
+  position: relative;
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 1px;
+}
+
+.reply-particular {
+  margin: 0px 0 0 50px;
+  width: 100%;
+}
+
+.replyy {
+  padding: 0 0 10px 0;
+}
+
+.reply-username {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 10px;
+  vertical-align: top;
+  user-select: none;
+}
+.reply-content {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  font-size: 15px;
+  padding-top: 12px;
+  font-style: italic;
+  max-width: 77%;
+  text-align: justify;
+  user-select: none;
+}
+
+.for-reply {
+  text-align: center;
+  width: 100%;
+}
+
+.reply-btn {
+  position: relative;
+  font-size: 15px;
+  width: 21%;
+  color: white;
+  margin-top: 3px;
+  padding-bottom: 3px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+.reply-btn:hover {
+  color: rgba(0,186,136,1);
+}
+
+.add-comment {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+}
+
+.submit-comment-btn {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: rgb(0, 93, 68);
+  border-radius: 15px;
+  user-select: none;
+}
+.submit-comment-btn:hover {
+  background-color: rgb(0, 133, 97);
+  }
+
+.for-space {
+  height: 5px;
+}
+
+.close-comment-btn-div {
+  text-align: center;
+}
+
+.close-comment-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  font-size: 30px;
+  line-height: 20px;
+  color: black;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.close-comment-btn:hover {
+  animation: animate1 0.3s linear;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.for-space-2 {
+  height: 10px;
+}
+.for-space-3 {
+  height: 70px;
+}
+
+.remove-blog-btn {
+  position: absolute;
+  margin: auto;
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(0,186,136,1);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  transition-property: all;
+  transition-duration: 0.05s;
+  transition-timing-function: linear;
+}
+
+.remove-blog-btn:hover {
+  width: 210px;
+  height: 42px;
+  font-size: 22.5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
